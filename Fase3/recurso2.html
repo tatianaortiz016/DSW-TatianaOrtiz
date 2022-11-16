@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Etiquetas Semánticas</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0px
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #2F5E6B;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+   /*grid-column-gap: 10px; /* if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  background-color:#4B96AB;
+  color:#FFF;  
+}
+.left a{
+	color:#FFF;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+	grid-area: right;
+	height: calc(100vh - 255px);
+	overflow:auto;
+	background-color: #EEE;
+}
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #67CEEB;
+  padding: 10px;
+  color:#FFF;
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="header">
+    <h1>Etiquetas Semánticas</h1>
+  </div>
+  
+  <div class="left">
+  <nav>
+    <ul>
+     <li><a href="index.html">Inicio</a></li>
+     <li>Temas
+     <ul>
+     <li><a href="tema1.html">Etiquetas semánticas estructurales</a></li>
+     <li><a href="tema2.html">¿Qué es CSS Grid?</a></li>
+     </ul>
+     </li>
+     <li>Recursos Digitales
+     <ul>
+     <li><a href="recurso1.html">Recurso 1</a></li>
+     <li><a href="recurso2.html">Recurso 2</a></li>
+     </ul>
+     </li>
+     <li>Aprendizaje
+     <ul>
+     <li><a href="#">Actividad 1</a></li>
+     <li><a href="#">Actividad 2</a></li>
+     </ul>
+     </li>
+     <li><a href="acercade.html">Acerca de</a></li>
+    </ul>
+    </nav>
+  </div>
+  <div class="middle">
+  
+  <section>
+    <h3>Recurso 2</h3>
+    <p><iframe width="100%" height="440" src="https://www.youtube.com/embed/1gPaDOT7eYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </section>
+  </div>  
+  
+  <div class="right">
+  <div class="">
+  <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  </div>
+  <div class="footer">
+    <p>tatortiz@misena.edu.co<br>
+Skype: rammstein_969<br>
+14/Nov/2022</p>
+  </div>
+</div>
+
+</body>
+</html>

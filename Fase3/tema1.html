@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Etiquetas Semánticas</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0px
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #2F5E6B;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+   /*grid-column-gap: 10px; /* if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  background-color:#4B96AB;
+  color:#FFF;  
+}
+.left a{
+	color:#FFF;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+	grid-area: right;
+	height: calc(100vh - 255px);
+	overflow:auto;
+	background-color: #EEE;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #67CEEB;
+  padding: 10px;
+  color:#FFF;
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="header">
+    <h1>Etiquetas semánticas estructurales</h1>
+  </div>
+  
+  <div class="left">
+  <nav>
+    <ul>
+     <li><a href="index.html">Inicio</a></li>
+     <li>Temas
+     <ul>
+     <li><a href="tema1.html">Etiquetas semánticas estructurales</a></li>
+     <li><a href="tema2.html">¿Qué es CSS Grid?</a></li>
+     </ul>
+     </li>
+     <li>Recursos Digitales
+     <ul>
+     <li><a href="recurso1.html">Recurso 1</a></li>
+     <li><a href="recurso2.html">Recurso 2</a></li>
+     </ul>
+     </li>
+     <li>Aprendizaje
+     <ul>
+     <li><a href="#">Actividad 1</a></li>
+     <li><a href="#">Actividad 2</a></li>
+     </ul>
+     </li>
+     <li><a href="acercade.html">Acerca de</a></li>
+    </ul>
+    </nav>
+  </div>
+  <div class="middle">
+  
+  <section>
+    <h3>Para que sirven</h3>
+    <p>
+    Las etiquetas semánticas estructurales nos sirven para que los motores de búsqueda, o cualquier
+otro mecanismo automático que lea un sitio web, sepa con exactitud qué partes de su contenido
+corresponden a cada una de las partes típicas de un sitio. Generalmente, en cualquier documento
+tenemos una cabecera, un cuerpo y un pie de página, elementos que definen la estructura
+representados por diversas etiquetas.    
+    </p>
+    <p>
+    <h3>Por qué debemos utilizar las etiquetas semánticas y cómo nos ayudan:</h3>
+se han creado para facilitar la vida, no solo de Google, sino de cualquier otro sistema que pueda
+procesar un documento HTML.
+añadir información a la Web, como metadatos semánticos que puedan ser interpretados por
+cualquier sistema informático. Con ello se puede facilitar que cualquier máquina que lee un
+documento HTML y no está apreciando cómo se presenta en pantalla, sino simplemente su código
+fuente, pueda saber a qué parte típica pertenece cada pedazo de código, para entender mejor qué
+es lo que se está tratando en cada caso.
+    </p>
+    <p>
+    <b>Figura 1.</b><br>Estructura<br><img src="imagenes/estructura.png" width="321" height="350"><br>
+    Nota: Tomado de https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html
+    </p>
+    </section>    
+  </div>  
+  <div class="right">
+  <div class="">
+  <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  </div>
+  
+  <div class="footer">
+    <p>tatortiz@misena.edu.co<br>
+Skype: rammstein_969<br>
+14/Nov/2022</p>
+  </div>
+</div>
+
+</body>
+</html>

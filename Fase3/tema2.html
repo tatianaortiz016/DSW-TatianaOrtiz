@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Etiquetas Semánticas</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0px
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #2F5E6B;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+   /*grid-column-gap: 10px; /* if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  background-color:#4B96AB;
+  color:#FFF;  
+}
+.left a{
+	color:#FFF;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+	grid-area: right;
+	height: calc(100vh - 255px);
+	overflow:auto;
+	background-color: #EEE;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #67CEEB;
+  padding: 10px;
+  color:#FFF;
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="header">
+    <h1>¿Qué es CSS Grid?</h1>
+  </div>
+  
+  <div class="left">
+  <nav>
+    <ul>
+     <li><a href="index.html">Inicio</a></li>
+     <li>Temas
+     <ul>
+     <li><a href="tema1.html">Etiquetas semánticas estructurales</a></li>
+     <li><a href="tema2.html">¿Qué es CSS Grid?</a></li>
+     </ul>
+     </li>
+     <li>Recursos Digitales
+     <ul>
+     <li><a href="recurso1.html">Recurso 1</a></li>
+     <li><a href="recurso2.html">Recurso 2</a></li>
+     </ul>
+     </li>
+     <li>Aprendizaje
+     <ul>
+     <li><a href="#">Actividad 1</a></li>
+     <li><a href="#">Actividad 2</a></li>
+     </ul>
+     </li>
+     <li><a href="acercade.html">Acerca de</a></li>
+    </ul>
+    </nav>
+  </div>
+  <div class="middle">
+  
+  <section>
+    <p>Es un sistema de maquetación web que divide la página en una cuadrícula o rejilla (grid) a partir de
+la cual se pueden posicionar los diferentes elementos de manera más sencilla, versátil y
+coherente.
+Su practicidad y sus múltiples ventajas lo han convertido en un estándar. Es decir, casi cualquier
+navegador soporta e interpreta este tipo de código.Este permite realizar con mucho menos código
+elementos y estructuras que resultaban muy complejas o directamente imposibles.<br><br>
+<b>Figura 1.</b><br>Conceptos Css Grid<br><img src="imagenes/grid-css-conceptos.png" width="523" height="328"><br> Nota: Tomado de https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/<br></p>
+
+    <h3>Ventajas de CSS Grid</h3>
+    <p>
+    <ul>
+        <li>Mucha más flexibilidad: te permite controlar los elementos en las 2 dimensiones y con total
+libertad.</li>
+        <li>Menos código y menos bugs: se reduce considerablemente el código empleado, lo que conlleva
+revisiones más sencillas y menor probabilidad de bugs.</li>
+        <li>Optimización de recursos: al ser código más simple y consistente se economiza tanto en tiempo
+como en recursos necesarios para mostrar la página.</li>
+        <li>R-esponsive más sencillo: permite crear elementos dinámicos que se adaptan a diferentes
+tamaños o resoluciones sin complicaciones.</li>
+    </ul>
+    <b>Figura 2.</b><br>Plantilla columnas<br><img src="imagenes/grid-template-columns.png" width="507" height="408"><br>Nota: Tomado de https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/
+</p>
+  </section>
+    	  
+
+  </div>  
+  
+  <div class="right">
+  <div class="">
+  <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  </div>
+  <div class="footer">
+    <p>tatortiz@misena.edu.co<br>
+Skype: rammstein_969<br>
+14/Nov/2022</p>
+  </div>
+</div>
+
+</body>
+</html>
