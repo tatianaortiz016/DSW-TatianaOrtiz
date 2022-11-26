@@ -1,75 +1,7 @@
 <html>
 <head>
 <title>Etiquetas Semánticas</title>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin:0px
-}
-
-/* Style the header */
-.header {
-  grid-area: header;
-  background-color: #2F5E6B;
-  color: #FFFFFF;
-  padding: 10px;
-  text-align: center;
-  font-size: 25px;
-}
-
-/* The grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    'header header header header header header' 
-    'left middle middle middle middle right' 
-    'footer footer footer footer footer footer';
-   /*grid-column-gap: 10px; /* if you want gap between the columns */
-} 
-
-.left,
-.middle,
-.right {
-  padding: 10px;
-  
-}
-
-/* Style the left column */
-.left {
-  grid-area: left;
-  background-color:#4B96AB;
-  color:#FFF;  
-}
-.left a{
-	color:#FFF;
-}
-
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right {
-	grid-area: right;
-	height: calc(100vh - 255px);
-	overflow:auto;
-	background-color: #EEE;
-	max-width: 	390px;
-}
-/* Style the footer */
-.footer {
-  grid-area: footer;
-  background-color: #67CEEB;
-  padding: 10px;
-  color:#FFF;
-  text-align: center;
-}
-</style>
+<link href="css/estilos.css" rel="stylesheet">
 
 </head>
 <body>
